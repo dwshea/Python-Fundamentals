@@ -1,4 +1,4 @@
-def multiply(var1: int, var2: int):
+def multiply(var1: int, var2: int) -> int:
     answer: int = var1 * var2
     return answer
 
@@ -10,4 +10,7 @@ def add(a: float, b: float) -> float:
 
 assert add(2, 3) == 5
 assert add(10, -5) == 5
+assert add(100, 99.9) == 199.9
+#assert add(99.99, 1.99) == 101.98  --- false becasue the computer thinks the answer is 101.97999999999
+assert abs(add(99.99, 1.99) - 101.98) < 0.000001
 print('All test cases passed!')
