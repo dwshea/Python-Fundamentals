@@ -85,4 +85,11 @@ for i in range(10):
 for i in range(1, 10):
     print(i)
     #prints 1-9
+
+
+n = input('enter a whole number: ')
+print(len(str(n)))
+#prints the number of digits you input
 """
+
+
