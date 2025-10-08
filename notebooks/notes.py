@@ -1,3 +1,6 @@
+import time
+import os
+
 """
 def multiply(var1: int, var2: int) -> int:
     answer: int = var1 * var2
@@ -23,7 +26,7 @@ a = int(a)
 b = int(b)
 
 print(f"I have {a} apples, and {b} bannanas")
-"""
+
 
 
 def grade(percent: int):
@@ -49,3 +52,37 @@ def main():
     print(f'You have a {ans}')
 
 main()
+
+
+def clearScreen():
+    if os.name == 'nt':
+        os.system('cls')
+    else:
+        os.system('clear')
+
+
+def count_down(start: int, text: str):
+    for i in range (start, 0, -1):
+        print(i)
+        time.sleep(1)
+        clearScreen()
+
+    print(text)
+
+count_down(20, 'Booyaahhh!')
+
+
+for i in range(10, 1, -1):
+    print(i)
+    #prints 10-2
+
+
+for i in range(10):
+    print(i)
+    #prints 0-9
+
+
+for i in range(1, 10):
+    print(i)
+    #prints 1-9
+"""
