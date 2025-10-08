@@ -92,4 +92,6 @@ print(len(str(n)))
 #prints the number of digits you input
 """
 
-
+ss = 'hello world!'
+tt = ss.upper()
+print(tt)
