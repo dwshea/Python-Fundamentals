@@ -90,8 +90,10 @@ for i in range(1, 10):
 n = input('enter a whole number: ')
 print(len(str(n)))
 #prints the number of digits you input
-"""
+
 
 ss = 'hello world!'
 tt = ss.upper()
 print(tt)
+"""
+
