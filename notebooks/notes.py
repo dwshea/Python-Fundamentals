@@ -97,3 +97,20 @@ tt = ss.upper()
 print(tt)
 """
 
+ints: list[int] = []
+
+file_name = input("Please enter input file name: ")
+
+with open(file_name, 'r') as fin:
+    while True:
+        num = fin.readline()
+        num = num.strip()
+        if not num:
+            break
+
+        ints.append(int(num))
+fin.close()
+
+ints.sort()
+
+print(ints[::-1])
