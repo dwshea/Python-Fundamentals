@@ -113,4 +113,8 @@ fin.close()
 
 ints.sort()
 
-print(ints[::-1])
+
+output_file_name = input('Enter a file to write output to: ')
+
+with open(output_file_name, 'w') as new_file:
+        new_file.write(str(ints))
