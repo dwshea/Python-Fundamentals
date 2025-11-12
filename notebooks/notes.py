@@ -109,7 +109,6 @@ with open(file_name, 'r') as fin:
             break
 
         ints.append(int(num))
-fin.close()
 
 ints.sort()
 
