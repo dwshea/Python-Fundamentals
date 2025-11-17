@@ -134,11 +134,12 @@ print(find_frequency('mississippi'))
 
 def count_down(n: int):
     if n == 0:
-        "Times up!"
+        print("Times up!")
     else:
         print(n)
-        count_down(n-1)
         time.sleep(1)
+        count_down(n-1)
+
 
 timer = int(input("Input how many seconds you want for a timer: "))
 count_down(timer)
