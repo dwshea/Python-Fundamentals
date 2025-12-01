@@ -130,7 +130,7 @@ def find_frequency(sentence: str):
     return freq
 
 print(find_frequency('mississippi'))
-"""
+
 
 def count_down(n: int):
     if n == 0:
@@ -143,3 +143,8 @@ def count_down(n: int):
 
 timer = int(input("Input how many seconds you want for a timer: "))
 count_down(timer)
+"""
+
+number = 12345
+last_digit = number % 10
+print(last_digit)
